@@ -370,6 +370,21 @@ img {
     line-height: 1.36;
   }
 }
+.contacts__container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__representatives:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.contacts__item {
+  background: #f8d24e;
+  border-radius: 4px;
+}
+
 /*0px-767px*/
 @media screen and (max-width: 767px) {
   .advantage__item:not(:last-child) {
