@@ -1,0 +1,130 @@
+/*0px-767px*/
+@media screen and (max-width: 767px) {
+  .team:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+/*768px-1199px*/
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section-team {
+  background-color: var(--second-background-color);
+}
+
+.team__img {
+  width: 100%;
+}
+
+.container-team__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.team {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__member {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team__profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+}
+
+.list-social-networks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.list-social-networks__item {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+  color: var(--primary-white-color);
+  transition: var(--time-function);
+
+  &:hover svg,
+  &:focus svg,
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+    transition: var(--time-function);
+  }
+}
+
+.list-social-networks__link {
+  display: flex;
+  width: inherit;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-social-networks__icon {
+  fill: var(--icon-color);
+  transition: var(--time-function);
+}
+
+/*768px-1199px*/
+
+@media screen and (min-width: 768px) {
+  .list-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .team {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+/*1200px*/
+
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  .container-team__title {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,64 @@
+/*0px-767px*/
+
+@media screen and (max-width: 767px) {
+  .filter {
+    flex-wrap: wrap;
+  }
+  .filter__menu:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  .filter__button-transfer {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .filter__menu:nth-child(-n + 4) {
+    margin-bottom: 15px;
+  }
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter-projects {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter__menu:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__button {
+  background: var(--second-background-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  cursor: pointer;
+  border: 0;
+  transition: var(--time-function);
+
+  &.current,
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    transition: var(--time-function);
+  }
+}

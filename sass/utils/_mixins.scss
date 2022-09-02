@@ -1,0 +1,11 @@
+@mixin font($fs: 14px, $fw: 700, $lh: 16px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: calc($lh / $fs);
+}
+
+@mixin font-h2($fs: 36px, $fw: 700, $lh: 42px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: calc($lh / $fs);
+}
